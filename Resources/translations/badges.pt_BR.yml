@@ -7,3 +7,5 @@ login-cidadao.nfg_access_lvl.title: Nível na Nota Fiscal Gaúcha
 login-cidadao.nfg_access_lvl.description: Medalha concedida a quem tem sua conta da NFG vinculada ao Login Cidadão.
 login-cidadao.voter_registration.title: Título de Eleitor Válido
 login-cidadao.voter_registration.description: Medalha concedida a quem informou seu Título de Eleitor.
+login-cidadao.is_agent_public.title: Servidor Público
+login-cidadao.is_agent_public.description: Medalha concedida a quem informou os dados comprovando que é um servidor público.

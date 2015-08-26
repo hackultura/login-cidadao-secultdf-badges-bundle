@@ -44,6 +44,10 @@ class BadgesSubscriber extends AbstractBadgesEventSubscriber
                              $translator->trans("$namespace.voter_registration.description",
                                                 array(), 'badges'),
                                                 array('counter' => 'countVoterRegistration'));
+        $this->registerBadge('is_agent_public',
+                             $translator->trans("$namespace.is_agent_public_description",
+                                                array(), 'badges'),
+                                                array('counter' => 'countIsAgentPublic'));
     }
 
     public function onBadgeEvaluate(EvaluateBadgesEvent $event)
@@ -119,6 +123,15 @@ class BadgesSubscriber extends AbstractBadgesEventSubscriber
                 ->andWhere('p.cpf IS NOT NULL')
                 ->andWhere('p.nfgAccessToken IS NOT NULL')
                 ->getQuery()->getSingleScalarResult();
+    }
+
+    protected function countIsAgentPublic()
+    {
+        return $this->em->getRepository('PROCERGSLoginCidadaoCoreBundle:Person')
+            ->createQueryBuilder('p')
+            ->select('p.agentPublic')
+            ->andWhere('p.agentPublic IS NULL')
+            ->getQuery()->getSingleScalarResult();
     }
 
     protected function countValidEmail()
