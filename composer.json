@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Login Cidadão's Badge Bundle",
     "keywords": ["login-cidadao", "badges"],
-    "homepage": "https://github.com/PROCERGS/login-cidadao-badges-bundle",
+    "homepage": "https://github.com/hackultura/login-cidadao-secultdf-badges-bundle",
     "license": "MIT",
     "authors": [
         {
