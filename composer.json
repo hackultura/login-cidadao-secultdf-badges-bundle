@@ -1,5 +1,5 @@
 {
-    "name": "procergs/login-cidadao-badges-bundle",
+    "name": "hackultura/login-cidadao-secultdf-badges-bundle",
     "type": "symfony-bundle",
     "description": "Login Cidadão's Badge Bundle",
     "keywords": ["login-cidadao", "badges"],
@@ -9,7 +9,11 @@
         {
             "name": "Guilherme Donato",
             "email": "packagist@cadastro.dona.to"
-        }
+        },
+		{
+			"name": "Gilson Filho",
+			"email": "me@gilsondev.in"
+		}
     ],
     "require": {
         "php": ">=5.3.0"
