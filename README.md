@@ -1,4 +1,5 @@
-login-cidadao-badges-bundle
-===========================
+Login Cidadão Badges
+====================
 
-login-cidadao's badges
+Bundle baseado no [login-cidadao-badges-bundle]() do PROCERGS, que define alguns novos bundles para validar informações relacionados
+ao SECULT-DF.
