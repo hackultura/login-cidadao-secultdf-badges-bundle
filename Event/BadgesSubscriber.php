@@ -34,7 +34,7 @@ class BadgesSubscriber extends AbstractBadgesEventSubscriber
                              $translator->trans("$namespace.valid_email.description", array(),
                                                 'badges'), array('counter' => 'countValidEmail'));
         $this->registerBadge('is_agent_public',
-                             $translator->trans("$namespace.is_agent_public_description",
+                             $translator->trans("$namespace.is_agent_public.description",
                                                 array(), 'badges'),
                                                 array('counter' => 'countIsAgentPublic'));
     }
