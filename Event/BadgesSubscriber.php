@@ -76,10 +76,10 @@ class BadgesSubscriber extends AbstractBadgesEventSubscriber
     protected function checkAgentPublic(EvaluateBadgesEvent $event)
     {
         $person = $event->getPerson();
-        # if (is_numeric($person->getCpf())) {
-        #     $event->registerBadge($this->getBadge('is_agent_public', true));
-        # }
-        $event->registerBadge($this->getBadge('is_agent_public', true));
+        if (is_numeric($person->getCpf()) && is_null($person->getAgentPublic())) {
+            $event->registerBadge($this->getBadge('is_agent_public', true));
+        }
+        # $event->registerBadge($this->getBadge('is_agent_public', true));
     }
 
     protected function checkEmail(EvaluateBadgesEvent $event)
